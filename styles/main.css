@@ -1,7 +1,9 @@
 * {
   margin: 0;
 }
-
+body{
+  max-width:max-content;
+}
 p {
   margin-top: 0;
   margin-bottom: 0;
@@ -15,12 +17,13 @@ a{
   text-decoration:none;
   color: #c60001;
   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight:bold;
+  font-weight:700;
+}
+.search-container{
+  margin-left:0;
 }
 .main-logo{
-  height: 250px;
-    margin-bottom: 0;
-    padding: 0;
+  width:250px;
 }
 .input{
   width:400px;
@@ -28,33 +31,25 @@ a{
   border-radius:4px;
   border:none;
   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight:bold;
+  font-weight:700;
   padding:10px;
   font-size:15px;
   box-shadow:3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 .head-container{
-  display:flex;
-  flex-direction:row;
-  justify-content:center;
-  align-items:center;
-  height: 150px;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
 }
 #header {
+  padding:30px;
   background: #202124;
-  margin-top: 0;
-  height: 150px;
+  margin-bottom:30px;
 }
 .isaac-picture {
-  width: 350px;
+  width: 100%;
 }
 
-.main-container {
-  width: 350px;
-  display: inline-block;
-  box-sizing: border-box;
-  margin:50px 30px;
-}
 .sub-section-grid{
   display: grid;
   grid-template-columns: 50px 1fr;
@@ -77,4 +72,10 @@ a{
 }
 .sub-body-container{
   margin-bottom:10px;
+}
+.picture-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 50px;;
 }
